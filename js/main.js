@@ -22,10 +22,11 @@ document.querySelector('#btn-localizacao').addEventListener('click', function (e
 
     function showError(){
 
-        navigator.permissions.query({name:'geolocation'}).then(function(result) {
+        navigator.permissions.query({name:'geolocation'}).then(function() {
             titulo.innerHTML = "Para ter acesso, é necessário permitir 'Saber sua localização'!";
             latitudeS.innerHTML = "";
             longitudeS.innerHTML = "";
+
     });
           
         
