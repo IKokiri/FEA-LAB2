@@ -1,6 +1,7 @@
 document.querySelector('#btn-localizacao').addEventListener('click', function (event) {
     var titulo = document.getElementById('titulo');
-    var localizacao = document.getElementById('localizacao');         
+    var latitudeS = document.getElementById('latitude');         
+    var longitudeS = document.getElementById('longitude');         
 
     if (navigator.geolocation) {
         /* geolocation is available */
@@ -11,12 +12,12 @@ document.querySelector('#btn-localizacao').addEventListener('click', function (e
     }
 
     function showPosition(position){
-        titulo.innerHTML = "Você está localizando em: ";
-        var latitude = "Latitude: " + position.coords.latitude + " - ";
-        var longitude = "Longitude: " + position.coords.longitude;
+        // titulo.innerHTML = "Você está localizando em: ";
+        // var latitude = "Latitude: " + position.coords.latitude + " - ";
+        // var longitude = "Longitude: " + position.coords.longitude;
         
-        titulo.innerHTML = "Você está localizando em: ";
-        localizacao.innerHTML = latitude + longitude;
+        latitudeS.innerHTML = "Latitude "+position.coords.latitude;
+        longitudeS.innerHTML = "Longitude "+position.coords.longitude;
     }
 
     function showError(error) {
