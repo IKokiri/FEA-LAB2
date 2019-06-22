@@ -1,8 +1,15 @@
-body {
-  border: 5px solid red;
+#loc {
+  margin: auto;
+  width: 50%;
+  border: 2px dashed gray;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
-body div {
-  border: 2px solid green;
+#loc h1 {
+  color: #777;
+}
+#loc p {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
