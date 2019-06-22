@@ -5,7 +5,7 @@
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
-.localizador h1 {
+.localizador .localizador__title {
   color: #777;
 }
 .localizador p {
@@ -21,7 +21,13 @@
   margin: 1%;
 }
 .localizador .localizador__mensagem {
+  font-weight: bold;
+}
+.localizador .localizador__mensagem--erro {
   color: red !important;
+}
+.localizador .localizador__mensagem--sucesso {
+  color: green !important;
 }
 .localizador hr {
   width: 50%;

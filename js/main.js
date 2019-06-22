@@ -1,4 +1,4 @@
-var titulo = document.getElementById('titulo');
+var sucesso = document.getElementById('sucesso');
 var error = document.getElementById('error');
 var latitudeS = document.getElementById('latitude');         
 var longitudeS = document.getElementById('longitude');  
@@ -15,7 +15,7 @@ document.querySelector('#btn-localizacao').addEventListener('click', function (e
 
     function showPosition(position){
         
-        titulo.innerHTML = "Você está:";
+        sucesso.innerHTML = "Você está:";
         latitudeS.innerHTML = "Latitude "+position.coords.latitude;
         longitudeS.innerHTML = "Longitude "+position.coords.longitude;
         error.innerHTML = "";
@@ -27,7 +27,7 @@ document.querySelector('#btn-localizacao').addEventListener('click', function (e
             error.innerHTML = "Para ter acesso, é necessário permitir 'Saber sua localização'!";
             latitudeS.innerHTML = "";
             longitudeS.innerHTML = "";
-            titulo.innerHTML = "";
+            sucesso.innerHTML = "";
 
     });
           
