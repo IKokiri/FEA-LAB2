@@ -1,15 +1,31 @@
-#loc {
+.localizador {
   margin: auto;
   width: 50%;
   border: 2px dashed gray;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
-#loc h1 {
+.localizador h1 {
   color: #777;
 }
-#loc p {
+.localizador p {
   color: black;
+}
+.localizador .localizador__button {
+  background-color: white;
+  border: none;
+  color: blue;
+  text-transform: uppercase;
+  border: 1px dashed gray;
+  padding: 2%;
+  margin: 1%;
+}
+.localizador .localizador__mensagem {
+  color: red !important;
+}
+.localizador hr {
+  width: 50%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

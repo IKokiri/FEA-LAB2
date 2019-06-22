@@ -18,14 +18,16 @@ document.querySelector('#btn-localizacao').addEventListener('click', function (e
         titulo.innerHTML = "Você está:";
         latitudeS.innerHTML = "Latitude "+position.coords.latitude;
         longitudeS.innerHTML = "Longitude "+position.coords.longitude;
+        error.innerHTML = "";
     }
 
     function showError(){
 
         navigator.permissions.query({name:'geolocation'}).then(function() {
-            titulo.innerHTML = "Para ter acesso, é necessário permitir 'Saber sua localização'!";
+            error.innerHTML = "Para ter acesso, é necessário permitir 'Saber sua localização'!";
             latitudeS.innerHTML = "";
             longitudeS.innerHTML = "";
+            titulo.innerHTML = "";
 
     });
           

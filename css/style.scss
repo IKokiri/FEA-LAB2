@@ -1,4 +1,4 @@
-#loc{
+.localizador{
     
     margin:auto;
     width:50%;
@@ -13,5 +13,25 @@
     p{
 
         color:black;
+    }
+
+    .localizador__button{
+        background-color: white;
+        border: none;
+        color:blue;
+        text-transform: uppercase;
+        border: 1px dashed gray;
+        padding: 2%;
+        margin: 1%;
+    }
+
+    .localizador__mensagem{
+        color:red !important;
+    }
+
+    hr{
+        width:50%;
+        margin:auto;
+        
     }
 }
