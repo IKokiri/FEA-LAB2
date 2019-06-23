@@ -1,18 +1,28 @@
+$cor_principal: #777;
+
+@mixin title {
+    text-transform: uppercase;
+    padding:10px;
+}
+
 .localizador {
     margin: 0 auto;
     position: absolute;
     top: 25%;
     left: 25%;
     width: 50%;
-    border: 2px dashed gray;
+    border: 2px dashed $cor_principal;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     .localizador__title {
-        color: #777;
+        @include title;
+        color: darken($cor_principal,5%);
+        
     }
     p {
         color: black;
     }
+
     .localizador__button {
         border-radius: .3rem;
         color: #fff;
