@@ -1,5 +1,8 @@
 .localizador {
-  margin: auto;
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  left: 25%;
   width: 50%;
   border: 2px dashed gray;
   text-align: center;
@@ -12,13 +15,17 @@
   color: black;
 }
 .localizador .localizador__button {
-  background-color: white;
-  border: none;
-  color: blue;
+  border-radius: 0.3rem;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
   text-transform: uppercase;
   border: 1px dashed gray;
   padding: 2%;
   margin: 1%;
+}
+.localizador .localizador__button:hover {
+  background-color: blue;
 }
 .localizador .localizador__mensagem {
   font-weight: bold;
